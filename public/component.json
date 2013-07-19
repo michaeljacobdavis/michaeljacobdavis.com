@@ -5,6 +5,7 @@
     "bootstrap": "~2.3.1",
     "backbone": "~1.0.0",
     "jquery": "~1.9.1",
-    "underscore": "~1.4.4"
+    "underscore": "~1.4.4",
+    "font-awesome": "~3.2.1"
   }
 }
