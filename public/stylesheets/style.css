@@ -1,7 +1,28 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+header {
+  background: transparent url("../images/texture.jpg");
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
-a {
-  color: #00b7ff;
+header h1,
+header h2 {
+  color: #505d63;
+}
+header .qualifications {
+  font-size: 1.1em;
+}
+header .qualifications li {
+  line-height: 1.6em;
+}
+header .info {
+  font-size: 1.3em;
+  line-height: 2em;
+}
+header .info a {
+  color: #333;
+}
+header .info a:hover i {
+  text-decoration: none;
+}
+main {
+  padding: 10px;
 }
