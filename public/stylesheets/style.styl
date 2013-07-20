@@ -1,3 +1,22 @@
+ul
+  font-size: 1.1em
+  list-style-type: none
+  margin-left: 0
+  padding-left: 1em
+  text-indent: -1em
+
+  li
+    line-height: 1.6em
+    list-style-type: none
+    padding-left: 2em
+    text-indent: -1em
+
+    &:before
+      content: '\f138'
+      font-family: 'FontAwesome'
+      margin-right: 1em
+      margin-left: -1em
+
 header
   background: transparent url(../images/texture.jpg);
   padding: 3%
@@ -7,11 +26,9 @@ header
   h1,h2
     color: #505d63
 
-  .qualifications
-    font-size: 1.1em
+  ul.qualifications
 
     li
-      line-height: 1.6em
 
   .info
     font-size: 1.3em
@@ -48,3 +65,9 @@ main
 
   h3
     color: #627076
+
+  time
+    padding: .5em
+    background: #f0f0f0
+    margin: .5em 0
+    display: inline-block

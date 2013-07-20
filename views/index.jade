@@ -3,7 +3,7 @@ extends layout
 block content
   header
     div.row-fluid.intro
-      div.span5.offset1
+      div.span6.offset1
         h1 Michael Davis
         div.info
           a.info-item(href='mailto:mike@michaeljacobdavis.com')
@@ -22,7 +22,7 @@ block content
             i.icon-map-marker
             |  San Diego, CA
 
-      div.span6
+      div.span5
         h2 Front-End Developer
         ul.qualifications
           li 10 years of experience with the Adobe Suite (Photoshop, Illustrator etc).
@@ -38,37 +38,77 @@ block content
 
         section
           div.row-fluid
-            div.span6.employer
+            div.span5.employer
               h3 User Experience
               h4 Qualcomm
-              time April 2013 - Present
+              time 
+                i.icon-calendar
+                |  April 2013 - Present
               p
-                | Explanation Here
-            div.span6.employer
+                | At Qualcomm, I continued working on the HealthyCircles application moving it towards a
+                | <attr title='Single Page Application'>SPA</attr> architecture. My projects have included
+                | a dashboard for healthcare professionals to oversee a large group of patients and see early 
+                | warning signs, a workflow for patients to add, remove and manage devies associated with their account.
+              p
+                | Additionally, I continued with the brownbags presenting Polyfills and Shims, and unit testing with Jasmine.
+              ul
+                li Server-side: C#, MVC4, Web API (REST, OData)
+                li Client-side: JavaScript, Knockout, Jasmine, Kendo UI, Moment, jQuery, RequireJS, Modernizr
+            div.span5.offset1.employer
 
               h3 UX Engineer III
-              h4 Healthy Circles
-              time October 2012 - April 2013
+              h4 HealthyCircles (Purchased by Qualcomm)
+              time 
+                i.icon-calendar
+                |  October 2012 - April 2013
               p
-                | Explanation Here
+                | At HealthyCircles, I was charged with increasing the performance and usability of the application.
+                | By moving to a clientside Knockout based (<abbr title='Model View ViewModel'>MVVM</abbr>) <attr title='Single Page Application'>SPA</attr>
+                | and using ASP.Net Web API as a RESTful backend, we were able to increase performance and decrease the amount
+                | of data sent over the wire.
+
+              p
+                | Since a large portion of our user base is using older browsers (IE7+), we used Modernizr along with various shims/polyfills
+                | to maintain browser compatability.
+              p
+                | Additionally, I conducted brownbags on MVC4, Bundling/Minification, and MVVM/PubSub (KnockoutJS)
+              ul
+                li Server-side: C#, MVC4, Web API(REST, OData)
+                li Client-side: JavaScript, Knockout, Jasmine, Kendo UI, Moment, jQuery, RequireJS, Modernizr
+
           div.row-fluid
-            div.span6.employer
+            div.span5.employer
 
               h3 Web Developer/Designer
               h4 College Loan Corporation
-              time December 2008 - October 2012
+              time
+                i.icon-calendar
+                |  December 2008 - October 2012
               p
-                | Explanation Here
-            div.span6.employer
+                | As a senior member of the web team, I worked on a replacement for the
+                | online loan application using jQuery, Modernizr, Handlebars, HTML5 (Local Storage,
+                | Semantic Markup), ASP.NET MVC3, WCF and Microsoft CRM Dynamics. For testing we use QUnit, 
+                | Moq and MSTest. We released on a biweekly basis to a sample of users for feedback.
+              ul
+                li Server-side: C#, MVC3, WCF, MS CRM Dynamics, Moq
+                li Client-side: JavaScript, jQuery, Modernizr, Handlebars, QUnit
+
+            div.span5.offset1.employer
 
               h3 Web Developer/Designer
               h4 CenterARTES at <abbr title='California State University'>CSU</abbr>, San Marcos
-              time January 2005 - May 2008
+              time 
+                i.icon-calendar
+                |  January 2005 - May 2008
               p
-                | Explanation Here
-
+                | At CenterArtes, I created and maintined the CenterARTES and Arts and Lecures, websites
+                | website. Additonally I wrote an administrative control panel and mailing list manager
+                | for the website.
+              ul
+                li Server-side: PHP, MySQL
+                li Client-side: JavaScript, jQuery
         div.row-fluid
-          div.span6
+          div.span5
             h2 
               i.icon-book
               |  Education
@@ -76,7 +116,10 @@ block content
             section
                   h3 <abbr title='California State University'>CSU</abbr>, San Marcos
                   h4 Bachelors, Arts and Technology
-          div.span6
+                  time
+                    i.icon-calendar
+                    |  Graduated December 2008
+          div.span5.offset1
             h2
               i.icon-lightbulb
               | &nbsp; OpenCourseWare
