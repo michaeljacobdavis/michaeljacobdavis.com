@@ -1,6 +1,6 @@
 header {
   background: transparent url("../images/texture.jpg");
-  padding: 5%;
+  padding: 3%;
   border-bottom: 1px solid #ccc;
 }
 header h1,
@@ -17,15 +17,35 @@ header .info {
   font-size: 1.3em;
   line-height: 2em;
 }
+header .info .info-item {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+header .info .info-item i {
+  width: 1.2em;
+  display: inline-block;
+}
 header .info a {
   color: #333;
 }
-header .info a:hover i {
+header .info a:hover {
   text-decoration: none;
+  background: #3a7aa6;
+  color: #fff;
 }
 main {
-  padding: 5%;
+  padding: 3%;
 }
 main section {
   margin-left: 5%;
+}
+main h2 {
+  margin-top: 1em;
+  color: #ccc;
+}
+main h2 i {
+  color: #777;
+}
+main h3 {
+  color: #627076;
 }
