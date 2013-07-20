@@ -18,21 +18,32 @@ ul li:before {
   margin-left: -1em;
 }
 header {
-  background: transparent url("../images/texture.jpg");
+  background: url("http://farm7.staticflickr.com/6156/6193763495_339cc499ae_o.png") no-repeat 0 -150px fixed;
+  background-size: cover;
   padding: 3%;
   border-bottom: 1px solid #ccc;
 }
+header .intro {
+  background: rgba(0,0,0,0.3);
+}
 header h1,
 header h2 {
-  color: #505d63;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+header ul.qualifications li {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
 }
 header .info {
   font-size: 1.3em;
   line-height: 2em;
 }
 header .info .info-item {
+  color: #fff;
   padding: 0.5em;
   margin: 0.5em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
 }
 header .info .info-item i {
   width: 1.2em;
@@ -43,7 +54,7 @@ header .info a {
 }
 header .info a:hover {
   text-decoration: none;
-  background: #3a7aa6;
+  background-color: #0099e8;
   color: #fff;
 }
 main {
@@ -54,7 +65,8 @@ main section {
 }
 main h2 {
   margin-top: 1em;
-  color: #ccc;
+  color: #0099e8;
+  white-space: nowrap;
 }
 main h2 i {
   color: #777;
@@ -64,7 +76,8 @@ main h3 {
 }
 main time {
   padding: 0.5em;
-  background: #f0f0f0;
+  background: #0099e8;
+  color: #fff;
   margin: 0.5em 0;
   display: inline-block;
 }
@@ -81,6 +94,7 @@ main time {
   overflow: hidden;
   box-sizing: border-box;
   background: #073642;
+  border: none;
 }
 .view-source:hover code.fake-html {
   width: 100px;

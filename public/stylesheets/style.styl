@@ -18,26 +18,34 @@ ul
       margin-left: -1em
 
 header
-  background: transparent url(../images/texture.jpg)
+  background: url(http://farm7.staticflickr.com/6156/6193763495_339cc499ae_o.png) no-repeat 0 -150px fixed
+  background-size: cover
   padding: 3%
   border-bottom: 1px solid #ccc
 
+  .intro
+    background: rgba(0,0,0,0.3)
+
 
   h1,h2
-    color: #505d63
+    color: #fff
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8)
 
   ul.qualifications
 
     li
+      color: #fff
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.8)
 
   .info
     font-size: 1.3em
     line-height: 2em
 
     .info-item
+      color: #fff
       padding: .5em
       margin: .5em
-
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.8)
       i
         width: 1.2em
         display: inline-block
@@ -47,7 +55,7 @@ header
 
       &:hover
         text-decoration: none
-        background: #3a7aa6
+        background-color: #0099e8
         color: #fff
 
 main
@@ -58,7 +66,8 @@ main
 
   h2
     margin-top: 1em
-    color: #ccc
+    color: #0099e8
+    white-space: nowrap
 
     i
       color: #777
@@ -68,7 +77,8 @@ main
 
   time
     padding: .5em
-    background: #f0f0f0
+    background: #0099e8
+    color: #fff
     margin: .5em 0
     display: inline-block
 
@@ -85,6 +95,7 @@ main
     overflow: hidden
     box-sizing: border-box
     background: #073642
+    border: none
 
   &:hover
     code.fake-html
