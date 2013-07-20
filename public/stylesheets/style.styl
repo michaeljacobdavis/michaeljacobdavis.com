@@ -72,44 +72,62 @@ main
     margin: .5em 0
     display: inline-block
 
-.curl
-  width: 20px
-  height:20px
+.view-source
   position: absolute
-  top:0
-  left:0
-  background:linear-gradient(135deg, #fff,#f3f3f3 45%,#ddd 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5)
-  transition: all .5s ease
+  z-index: 1
 
-  &:before,
-  &:after 
-    content: ''
+  code.fake-html
     position: absolute
     z-index: -1
-    left: 12.5%
-    bottom: 5.8%
-    width: 70%
-    max-width: 300px
-    max-height: 100px
-    height: 55%
-    box-shadow: 0 12px 15px rgba(0, 0, 0, .3)
-    transform: skew(-10deg) rotate(-6deg)
+    transition: all .5s ease
+    width: 20px
+    height: 20px
+    overflow: hidden
+    box-sizing: border-box
+    background: #073642
 
-  &:after 
-    left: auto
-    right: 5.8%
-    bottom: auto
-    top: 14.16%
-    transform: skew(-15deg) rotate(-84deg)
+  &:hover
+    code.fake-html
+      width: 100px
+      height: 100px
 
-   
-  &:hover 
-    width: 100px
-    height: 100px
-    content: '&'
+    .curl
+      width: 100px
+      height: 100px
 
-  &:hover:before,
-  &:hover:after 
-    box-shadow: 0 24px 30px rgba(0, 0, 0, .3)
+      &:before,
+      &:after 
+        box-shadow: 0 24px 30px rgba(0, 0, 0, .3)
 
+
+  .curl
+    width: 20px
+    height:20px
+    position: absolute
+    top:0
+    left:0
+    background-color: transparent;
+    background:linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+    transition: all .5s ease
+
+    &:before,
+    &:after 
+      content: ''
+      position: absolute
+      z-index: -1
+      left: 12.5%
+      bottom: 5.8%
+      width: 70%
+      max-width: 300px
+      max-height: 100px
+      height: 55%
+      box-shadow: 0 12px 15px rgba(0, 0, 0, .3)
+      transform: skew(-10deg) rotate(-6deg)
+
+    &:after 
+      left: auto
+      right: 5.8%
+      bottom: auto
+      top: 14.16%
+      transform: skew(-15deg) rotate(-84deg)

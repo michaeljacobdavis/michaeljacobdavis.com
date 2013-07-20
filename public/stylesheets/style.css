@@ -68,18 +68,45 @@ main time {
   margin: 0.5em 0;
   display: inline-block;
 }
-.curl {
+.view-source {
+  position: absolute;
+  z-index: 1;
+}
+.view-source code.fake-html {
+  position: absolute;
+  z-index: -1;
+  transition: all 0.5s ease;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #073642;
+}
+.view-source:hover code.fake-html {
+  width: 100px;
+  height: 100px;
+}
+.view-source:hover .curl {
+  width: 100px;
+  height: 100px;
+}
+.view-source:hover .curl:before,
+.view-source:hover .curl:after {
+  box-shadow: 0 24px 30px rgba(0,0,0,0.3);
+}
+.view-source .curl {
   width: 20px;
   height: 20px;
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #fff, #f3f3f3 45%, #ddd 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  background-color: transparent;
+  background: linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: all 0.5s ease;
 }
-.curl:before,
-.curl:after {
+.view-source .curl:before,
+.view-source .curl:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -92,18 +119,10 @@ main time {
   box-shadow: 0 12px 15px rgba(0,0,0,0.3);
   transform: skew(-10deg) rotate(-6deg);
 }
-.curl:after {
+.view-source .curl:after {
   left: auto;
   right: 5.8%;
   bottom: auto;
   top: 14.16%;
   transform: skew(-15deg) rotate(-84deg);
-}
-.curl:hover {
-  width: 100px;
-  height: 100px;
-}
-.curl:hover:before,
-.curl:hover:after {
-  box-shadow: 0 24px 30px rgba(0,0,0,0.3);
 }
