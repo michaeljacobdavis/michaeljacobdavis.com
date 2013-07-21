@@ -1,24 +1,37 @@
-ul {
+html body {
+  padding: 0;
+}
+ul.styled {
   font-size: 1.1em;
   list-style-type: none;
   margin-left: 0;
   padding-left: 1em;
   text-indent: -1em;
 }
-ul li {
+ul.styled li {
   line-height: 1.6em;
   list-style-type: none;
   padding-left: 2em;
   text-indent: -1em;
 }
-ul li:before {
+ul.styled li:before {
   content: '\f138';
   font-family: 'FontAwesome';
   margin-right: 1em;
   margin-left: -1em;
 }
+@media (max-width: 767px) {
+  .intro {
+    padding: 0 2.5%;
+  }
+}
 header {
   background: url("http://farm7.staticflickr.com/6156/6193763495_339cc499ae_o.png") no-repeat 0 -150px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -khtml-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 3%;
   border-bottom: 1px solid #ccc;
@@ -29,11 +42,21 @@ header .intro {
 header h1,
 header h2 {
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  -webkit-text-shadow: 1px;
+  -moz-text-shadow: 1px;
+  -khtml-text-shadow: 1px;
+  -ms-text-shadow: 1px;
+  -o-text-shadow: 1px;
+  text-shadow: 1px;
 }
 header ul.qualifications li {
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  -webkit-text-shadow: 1px;
+  -moz-text-shadow: 1px;
+  -khtml-text-shadow: 1px;
+  -ms-text-shadow: 1px;
+  -o-text-shadow: 1px;
+  text-shadow: 1px;
 }
 header .info {
   font-size: 1.3em;
@@ -43,7 +66,12 @@ header .info .info-item {
   color: #fff;
   padding: 0.5em;
   margin: 0.5em;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+  -webkit-text-shadow: 1px;
+  -moz-text-shadow: 1px;
+  -khtml-text-shadow: 1px;
+  -ms-text-shadow: 1px;
+  -o-text-shadow: 1px;
+  text-shadow: 1px;
 }
 header .info .info-item i {
   width: 1.2em;
@@ -80,6 +108,18 @@ main time {
   color: #fff;
   margin: 0.5em 0;
   display: inline-block;
+  background: #0099e8;
+}
+main ul.tags {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+main ul.tags li.tag {
+  background: #ddd;
+  display: inline-block;
+  padding: 0.35em;
+  margin: 0.25em;
 }
 .view-source {
   position: absolute;
@@ -88,10 +128,20 @@ main time {
 .view-source code.fake-html {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 20px;
   height: 20px;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box;
   background: #073642;
   border: none;
@@ -106,7 +156,12 @@ main time {
 }
 .view-source:hover .curl:before,
 .view-source:hover .curl:after {
-  box-shadow: 0 24px 30px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  -khtml-box-shadow: 0;
+  -ms-box-shadow: 0;
+  -o-box-shadow: 0;
+  box-shadow: 0;
 }
 .view-source .curl {
   width: 20px;
@@ -115,8 +170,23 @@ main time {
   top: 0;
   left: 0;
   background-color: transparent;
-  background: linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-image: -webkit-linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  background-image: -moz-linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  background-image: -khtml-linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  background-image: -ms-linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  background-image: -o-linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  background-image: linear-gradient(135deg, transparent, transparent 45%, rgba(0,43,54,0.2) 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  -khtml-box-shadow: 0;
+  -ms-box-shadow: 0;
+  -o-box-shadow: 0;
+  box-shadow: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .view-source .curl:before,
@@ -130,7 +200,17 @@ main time {
   max-width: 300px;
   max-height: 100px;
   height: 55%;
-  box-shadow: 0 12px 15px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  -khtml-box-shadow: 0;
+  -ms-box-shadow: 0;
+  -o-box-shadow: 0;
+  box-shadow: 0;
+  -webkit-transform: skew(-10deg) rotate(-6deg);
+  -moz-transform: skew(-10deg) rotate(-6deg);
+  -khtml-transform: skew(-10deg) rotate(-6deg);
+  -ms-transform: skew(-10deg) rotate(-6deg);
+  -o-transform: skew(-10deg) rotate(-6deg);
   transform: skew(-10deg) rotate(-6deg);
 }
 .view-source .curl:after {
@@ -138,5 +218,10 @@ main time {
   right: 5.8%;
   bottom: auto;
   top: 14.16%;
+  -webkit-transform: skew(-15deg) rotate(-84deg);
+  -moz-transform: skew(-15deg) rotate(-84deg);
+  -khtml-transform: skew(-15deg) rotate(-84deg);
+  -ms-transform: skew(-15deg) rotate(-84deg);
+  -o-transform: skew(-15deg) rotate(-84deg);
   transform: skew(-15deg) rotate(-84deg);
 }

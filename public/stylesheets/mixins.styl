@@ -1,0 +1,24 @@
+vendors = webkit moz khtml ms o
+
+create_rules(prop, args...)
+  for vendor in vendors
+    -{vendor}-{prop} args
+  {prop} args
+
+transform(args...)
+  create_rules('transform', args)
+
+transition(args...)
+  create_rules('transition', args)
+
+box-shadow(args)
+  create_rules('box-shadow', args)
+
+box-sizing(args)
+  create_rules('box-sizing', args)
+
+text-shadow(args)
+  create_rules('text-shadow', args)
+  
+background-size(args)
+  create_rules('background-size', args)

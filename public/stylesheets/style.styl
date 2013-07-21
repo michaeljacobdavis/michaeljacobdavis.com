@@ -1,4 +1,8 @@
-ul
+@import 'mixins'
+html body
+  padding: 0
+
+ul.styled
   font-size: 1.1em
   list-style-type: none
   margin-left: 0
@@ -16,6 +20,10 @@ ul
       font-family: 'FontAwesome'
       margin-right: 1em
       margin-left: -1em
+
+@media (max-width: 767px)
+  .intro
+    padding: 0 2.5%
 
 header
   background: url(http://farm7.staticflickr.com/6156/6193763495_339cc499ae_o.png) no-repeat 0 -150px fixed
@@ -81,6 +89,19 @@ main
     color: #fff
     margin: .5em 0
     display: inline-block
+    background: #0099e8
+
+  ul.tags
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+
+    li.tag
+      background: #ddd
+      display: inline-block
+      padding: .35em
+      margin: .25em
 
 .view-source
   position: absolute
@@ -118,7 +139,12 @@ main
     top:0
     left:0
     background-color: transparent;
-    background:linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    background-image: -webkit-linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    background-image: -moz-linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    background-image: -khtml-linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    background-image: -ms-linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    background-image: -o-linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
+    background-image: linear-gradient(135deg, transparent, transparent 45%, rgba(0, 43, 54, .2) 50%,#aaa 50%,#bbb 56%,#ccc 62%,#f3f3f3 80%,#fff 100%)
     box-shadow: 0 0 10px rgba(0, 0, 0, .5)
     transition: all .5s ease
 
