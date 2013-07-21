@@ -1,5 +1,87 @@
+@media print {
+  html body {
+    font-size: 10px;
+  }
+  html body h1,
+  html body h2,
+  html body h3,
+  html body h4 {
+    margin: 0.3em 0 !important;
+    line-height: 1.2em !important;
+  }
+  html body h1 {
+    font-size: 3em !important;
+  }
+  html body h2 {
+    font-size: 2em !important;
+  }
+  html body h3 {
+    font-size: 1.5em !important;
+  }
+  html body h4 {
+    font-size: 1.25em !important;
+  }
+  html body p {
+    margin-bottom: 0.5em !important;
+    line-height: 1.3em !important;
+  }
+  html body a[href].dont-show-url:after {
+    content: '';
+  }
+  html body abbr:after {
+    content: '' !important;
+  }
+  html body header {
+    padding: 0 !important;
+    border: none !important;
+  }
+  html body header .intro {
+    padding: 0 !important;
+  }
+  html body header .intro div.info {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    width: 50% !important;
+    float: left !important;
+  }
+  html body header .intro div.info .info-item {
+    font-size: 0.9em;
+    line-height: 1.6em !important;
+    margin: 0;
+    padding: 0;
+    margin: 1% 1% !important;
+  }
+  html body header .intro .about-me {
+    width: 48% !important;
+    margin: 1% 1% !important;
+    float: left;
+    font-size: 1.1em;
+  }
+  html body main {
+    padding: 0 !important;
+  }
+  html body main ul.tags li.tag {
+    margin: 0 !important;
+    padding: 0 1em 0 0 !important;
+    font-weight: bold !important;
+  }
+  html body main time {
+    margin: 0 !important;
+  }
+  html body main .history-box {
+    width: 48% !important;
+    margin: 1% 1% !important;
+    float: left !important;
+  }
+  html body main .education {
+    margin-left: 10% !important;
+  }
+}
 html body {
   padding: 0;
+}
+.hidden-screen {
+  display: none;
 }
 ul.styled {
   font-size: 1.1em;

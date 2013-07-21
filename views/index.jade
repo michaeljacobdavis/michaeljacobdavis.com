@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  a.view-source(href='https://github.com/michaeljacobdavis/michaeljacobdavis.com')
+  a.view-source.hidden-print(href='https://github.com/michaeljacobdavis/michaeljacobdavis.com')
     code.fake-html
         span(style='color: #586e75')&lt;!DOCTYPE html&gt;
         br
@@ -15,7 +15,10 @@ block content
       div.span6.offset1
         h1 Michael Davis
         div.info
-          a.info-item(href='mailto:mike@michaeljacobdavis.com')
+          a.info-item.hidden-screen.visible-print.dont-show-url(href='http://www.michaeljacobdavis.com')
+            i.icon-desktop
+            |  www.michaeljacobdavis.com
+          a.info-item.dont-show-url(href='mailto:mike@michaeljacobdavis.com')
             i.icon-envelope
             |  mike@michaeljacobdavis.com
           br
@@ -36,10 +39,10 @@ block content
             |  San Diego, CA
 
       div.span5
-        h2 Front-End Developer
+        h2.hidden-print Front-End Developer
         p.about-me
           | Hi, I'm Mike Davis and I do front-end development. I currently work at Qualcomm
-          | working on a web application that allows patients to communicate and coordinate with their
+          | working on a web application that enables patients to communicate and coordinate with their
           | care teams.
         p.about-me
           | I love working primarily in JavaScript, and its variations (CoffeeScript, NodeJS), but I dabble in C# in my day job, and
@@ -52,9 +55,9 @@ block content
           i.icon-briefcase
           |  Work History
 
-        section
+        section.work-history
           div.row-fluid
-            div.span5.employer
+            div.span5.employer.history-box
               h3 User Experience
               h4 Qualcomm
               time 
@@ -84,7 +87,7 @@ block content
                 li.tag Underscore
                 li.tag Sammy
 
-            div.span5.offset1.employer
+            div.span5.offset1.employer.history-box
 
               h3 UX Engineer III
               h4 HealthyCircles (Purchased by Qualcomm)
@@ -93,7 +96,7 @@ block content
                 |  &nbsp;October 2012 - April 2013
               p
                 | At HealthyCircles, I was charged with increasing the performance and usability of the application.
-                | By moving to a clientside Knockout based (<abbr title='Model View ViewModel'>MVVM</abbr>) <abbr title='Single Page Application'>SPA</abbr>
+                | By moving to a clientside Knockout based <abbr title='Model View ViewModel'>MVVM</abbr> <abbr title='Single Page Application'>SPA</abbr>
                 | and using ASP.Net Web API as a RESTful backend, we were able to increase performance and decrease the size
                 | of the dataset sent over the wire.
 
@@ -120,7 +123,7 @@ block content
 
 
           div.row-fluid
-            div.span5.employer
+            div.span5.employer.history-box
 
               h3 Web Developer/Designer
               h4 College Loan Corporation
@@ -144,7 +147,7 @@ block content
                 li.tag Handlebars
                 li.tag QUnit
  
-            div.span5.offset1.employer
+            div.span5.offset1.employer.history-box
 
               h3 Web Developer/Designer
               h4 CenterARTES at <abbr title='California State University'>CSU</abbr>, San Marcos
@@ -162,12 +165,12 @@ block content
                 li.tag jQuery
 
         div.row-fluid
-          div.span5
+          div.span5.history-box
             h2 
               i.icon-book
               |  Education
 
-            section
+            section.education
               div.row-fluid
                 div.span11.offset1
                   h3 <abbr title='California State University'>CSU</abbr>, San Marcos
@@ -175,34 +178,34 @@ block content
                   time
                     i.icon-calendar
                     |  &nbsp;Graduated December 2008
-          div.span5.offset1
+          div.span5.offset1.history-box
             h2
               i.icon-lightbulb
               | &nbsp; OpenCourseWare
 
-            section
+            section.open-course-ware
               ul.styled
                 li
-                  a(href='https://www.coursera.org/course/startup')
+                  a.dont-show-url(href='https://www.coursera.org/course/startup')
                     strong Startup Engineering
                   |  Stanford University
                 li
-                  a(href='http://beta.saasbook.info/courses')
+                  a.dont-show-url(href='http://beta.saasbook.info/courses')
                     strong Software Engineering for SAAS
                   |  UC Berkeley
                 li
-                  a(href='https://www.coursera.org/course/hci')
+                  a.dont-show-url(href='https://www.coursera.org/course/hci')
                     strong Human-Computer Interaction
                   |  Stanford University
                 li
-                  a(href='https://www.cs164.net/Main_Page')
+                  a.dont-show-url(href='https://www.cs164.net/Main_Page')
                     strong Mobile Software Engineering
                   |  Harvard University
                 li
-                  a(href='https://www.cs75.net/Main_Page')
+                  a.dont-show-url(href='https://www.cs75.net/Main_Page')
                     strong Building Dynamic Websites
                   |  Harvard University
                 li
-                  a(href='https://www.cs50.net/')
+                  a.dont-show-url(href='https://www.cs50.net/')
                     strong Introduction to Computer Science I
                   |  Harvard University

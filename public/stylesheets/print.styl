@@ -1,0 +1,75 @@
+@media print
+  html body
+    font-size: 10px
+
+    h1, h2, h3, h4
+      margin: 0.3em 0 !important
+      line-height: 1.2em !important
+
+    h1
+      font-size: 3em !important
+
+    h2
+      font-size: 2em !important
+
+    h3
+      font-size: 1.5em !important
+
+    h4
+      font-size: 1.25em !important
+
+    p
+      margin-bottom: .5em !important
+      line-height: 1.3em !important
+
+    a[href].dont-show-url:after
+      content: ''
+
+    abbr
+      &:after
+        content: '' !important;
+
+    header
+      padding: 0 !important
+      border: none !important
+
+      .intro
+        padding: 0 !important
+
+        div.info 
+          line-height: 1.2em
+          margin-bottom: 1em
+          width: 50% !important
+          float: left !important
+
+          .info-item
+            font-size: 0.9em
+            line-height: 1.6em !important
+            margin: 0
+            padding: 0
+            margin: 1% 1% !important
+
+        .about-me
+          width: 48% !important
+          margin: 1% 1% !important
+          float: left
+          font-size: 1.1em
+    main
+      padding: 0 !important
+
+      ul.tags
+        li.tag
+          margin: 0 !important
+          padding: 0 1em 0 0 !important
+          font-weight: bold !important
+
+      time
+        margin: 0 !important
+
+      .history-box
+        width: 48% !important
+        margin: 1% 1% !important
+        float: left !important
+        
+      .education
+        margin-left: 10% !important
