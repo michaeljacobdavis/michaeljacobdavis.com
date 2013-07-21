@@ -124,6 +124,9 @@ header {
 header .intro {
   background: rgba(0,0,0,0.4);
 }
+header .intro .header-box {
+  margin: 0 2.5% !important;
+}
 header h1,
 header h2 {
   color: #fff;
