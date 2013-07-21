@@ -33,7 +33,7 @@ header {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 3%;
+  padding: 10%;
   border-bottom: 1px solid #ccc;
 }
 header .intro {
