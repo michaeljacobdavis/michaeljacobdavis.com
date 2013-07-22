@@ -109,6 +109,14 @@ ul.styled li:before {
   .intro {
     padding: 0 2.5%;
   }
+  header {
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -khtml-background-size: auto;
+    -ms-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
 }
 header {
   background: url("http://farm7.staticflickr.com/6156/6193763495_339cc499ae_o.png") no-repeat 0 -150px fixed;
